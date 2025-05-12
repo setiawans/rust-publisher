@@ -8,3 +8,7 @@ Program publisher akan mengirimkan data sebanyak 5 kali ke _message broker_ dala
 > The url of: "**amqp://guest:guest@localhost:5672**" is the same as in the subscriber program, what does it mean?
 
 URL **amqp://guest:guest@localhost:5672** yang sama pada program publisher dan subscriber menunjukkan bahwa kedua program tersebut menggunakan server RabbitMQ yang sama sebagai perantara komunikasi, di mana publisher mengirimkan pesan ke _queue_ dan subscriber mendengarkan/mengambil pesan dari _queue_ yang sama.
+
+## Running RabbitMQ as Message Broker
+
+![/running-RabbitMQ](./images/running-RabbitMQ.jpg)
