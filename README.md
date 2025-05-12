@@ -12,3 +12,11 @@ URL **amqp://guest:guest@localhost:5672** yang sama pada program publisher dan s
 ## Running RabbitMQ as Message Broker
 
 ![/running-RabbitMQ](./images/running-RabbitMQ.jpg)
+
+## Sending and Processing Event
+
+![/run-publisher](./images/run-publisher.jpg)
+
+![/run-subscriber](./images/run-subscriber.jpg)
+
+Kedua gambar tersebut menunjukkan proses komunikasi dengan memanfaatkan RabbitMQ, di mana gambar pertama memperlihatkan eksekusi program publisher yang mengirimkan 5 data pengguna ke _message broker_ dalam satu kali eksekusi, sementara gambar kedua menampilkan program subscriber yang berhasil menerima data-data tersebut dan memprosesnya dengan menampilkan informasi pengguna di _console_.
