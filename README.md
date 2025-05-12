@@ -20,3 +20,9 @@ URL **amqp://guest:guest@localhost:5672** yang sama pada program publisher dan s
 ![/run-subscriber](./images/run-subscriber.jpg)
 
 Kedua gambar tersebut menunjukkan proses komunikasi dengan memanfaatkan RabbitMQ, di mana gambar pertama memperlihatkan eksekusi program publisher yang mengirimkan 5 data pengguna ke _message broker_ dalam satu kali eksekusi, sementara gambar kedua menampilkan program subscriber yang berhasil menerima data-data tersebut dan memprosesnya dengan menampilkan informasi pengguna di _console_.
+
+## Monitoring Chart Based on Publisher
+
+![/spike-RabbitMQ](./images/spike-RabbitMQ.jpg)
+
+Grafik pada gambar tersebut menunjukkan lonjakan (_spike_) pada _message rates_ yang mengukur jumlah pesan yang dikirim dalam interval waktu tertentu di RabbitMQ. Lonjakan ini terjadi setiap kali program publisher dijalankan, yang mengirimkan serangkaian pesan ke _message broker_. Dengan demikian, grafik ini dapat digunakan untuk memantau aktivitas pengiriman pesan pada sistem _message queue_.
